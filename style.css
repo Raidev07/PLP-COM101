@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+  background: #FFF;
+  min-height: 200vh;
+}
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 30px 50px;
+  z-index: 100000;
+}
+header.sticky{
+  padding: 5px 100px;
+  background: linear-gradient(to right, rgb(42, 196, 42), rgb(190, 184, 184));
+}
+.plplogo{
+  width: 110px;
+}
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+}
+header ul li a{
+  position: relative;
+  margin: 0 1px;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 600;
+  transition: 0.6s;
+}
+header ul li a::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background-color: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+header ul li a:hover::after{
+  width: 100%;
+}
+.csslogo{
+  width: 120px;
+}
+.subheader{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image:  linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(img/background.png); 
+  background-size: cover;
+}
+header.sticky ul li a{
+    color: #fff;
+}
+.text-box{
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.text-box h1{
+  font-size: 50px;
+}
+.text-box p{
+  margin: 10px 0 40px;
+  font-size: 14px;
+  color: #fff;
+}
+.hero-btn{
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.hero-btn:hover{
+  border: 1px solid #FFF;
+  background: #f44336;
+  transition: 1s;
+}
+header.sticky.navbar{
+  background-color: none;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 600;
+  transition: 0.6s;
+}
+
+.navbar ul li a:hover {
+  color: #f44336;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  justify-items: center;
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  position: relative;
+}
+
+.line {
+  height: 3px;
+  width: 25px;
+  background-color: #fff;
+  margin: 4px 0;
+  transition: transform 0.3s ease;
+}
+
+
+.hamburger.active .line:nth-child(1) {
+  transform: rotate(45deg);
+  position: absolute;
+  top: 10px; 
+}
+.hamburger.active .line:nth-child(2) {
+  opacity: 0; 
+}
+
+.hamburger.active .line:nth-child(3) {
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 10px; 
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar ul {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      height: 500px;
+      position: absolute;
+      top: 120px;
+      left: 0;
+      background-color: #333;
+  }
+
+  .navbar ul.active {
+      display: flex;
+  }
+
+  .hamburger {
+      display: flex;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----- course -----*/
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+  }
+  h1{
+    font-size: 36px;
+    font-weight: 600;
+  }
+  
+  p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+  }
+
+/*----- activity -----*/
+.activity{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+  }
+  h1{
+    font-size: 36px;
+    font-weight: 600;
+  }
+  
+  p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+  }
+/*----- subject -----*/
+.subject{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+  }
+  h1{
+    font-size: 36px;
+    font-weight: 600;
+  }
+  
+  p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+  }
+/*----- documentation -----*/
+.documentation{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+  }
+  h1{
+    font-size: 36px;
+    font-weight: 600;
+  }
+  
+  p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+  }
+/*----- about -----*/
+.about{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+  }
+  h1{
+    font-size: 36px;
+    font-weight: 600;
+  }
+  
+  p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+  }
