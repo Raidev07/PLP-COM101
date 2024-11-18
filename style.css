@@ -294,7 +294,7 @@ header.sticky.navbar{
     transition: 0.6s;
   }
   .layer:hover h1{
-    bottom: 40%;
+    bottom: 35%;
     opacity: 1;
   }
 
